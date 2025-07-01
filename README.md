@@ -1,7 +1,8 @@
 # Project Details
 
-Nama: Michael Effendy
-Nomor Pendaftaran:  193106541160-4
+**Nama:** Michael Effendy
+
+**Nomor Pendaftaran:**  193106541160-4
 
 Project ini dibuat untuk sertifikasi VSGA Junior Mobile Programmer yang dilaksanakan pada 1 Juli 2025 di Universitas Mataram.
 App Mobile Mike Bakery memungkinkan pengguna untuk login sebagai user biasa atau admin, di mana keduanya memiliki akses menu yang berbeda.
