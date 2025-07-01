@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            tools:context=".CheckoutActivity">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Detail Pengiriman"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextNamaPelanggan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Penerima"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextNomorTelepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nomor Telepon"
+                android:inputType="phone"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/textViewLokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lokasi: Belum diambil"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/buttonAmbilLokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dapatkan Lokasi Saat Ini"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/buttonKonfirmasiPesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Konfirmasi Pesanan" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBarCheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Tambah Kue Baru"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextCakeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Nama Kue" />
+
+            <EditText
+                android:id="@+id/editTextCakePrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Harga Kue"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editTextCakeDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="top"
+                android:hint="Deskripsi Kue"
+                android:minLines="3" />
+
+            <Button
+                android:id="@+id/buttonSaveCake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan Kue" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>
